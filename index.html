@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENGKEL LAS SAJ</title>
+    <link rel="icon" href="images/logosaj.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+<header>
+    <div class="header-content">
+        <!-- Logo -->
+        <img src="images/logosaj.png" alt="Bengkel Las SAJ Logo" class="logo">
+        <!-- Title -->
+        <h1>Bengkel Las SAJ (Jl. Damai, Wonorejo, Sariharjo, Kec. Ngaglik, Kab. Sleman, DIY)</h1>
+    </div>
+</header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showContent('beranda')">Beranda</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('jasa')">Pengerjaan</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('cara-pesan')">Cara Pesan</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('lokasi')">Lokasi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+<!-- Konten Beranda -->
+        <div id="beranda" class="content-section">
+            <h2>Selamat Datang di Bengkel Las Sinar Abadi Jaya !</h2>
+            <div class="banner">
+                <img src="images/banner.png" alt="Bengkel Las SAJ" class="banner-image">
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selamat datang di <strong>Bengkel Las Sinar Abadi Jaya</strong> – Bengkel Las Profesional yang siap memenuhi semua kebutuhan konstruksi Anda. Kami mengutamakan kualitas, keandalan, dan kepuasan pelanggan. Setiap pekerjaan kami kerjakan dengan penuh dedikasi dan tanggung jawab, memastikan hasil yang maksimal dan sesuai harapan Anda.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kami menawarkan berbagai layanan las untuk kebutuhan rumah, bangunan, dan properti, mulai dari pembuatan kanopi, pagar, railing tangga, hingga furnitur custom. Dengan pengalaman yang mumpuni, kami selalu memberikan solusi yang tepat dan terjamin kualitasnya.</p>
+            <h3>Kenapa Memilih Kami?</h3>
+            <ul>
+                <li><strong>Pekerjaan Maksimal</strong>: Setiap proyek kami kerjakan dengan perhatian penuh untuk hasil yang sempurna.</li>
+                <li><strong>Bertanggung Jawab</strong>: Kami selalu siap menangani keluhan dan memastikan kepuasan Anda.</li>
+                <li><strong>Garansi</strong>: Semua layanan kami dilengkapi dengan garansi, memberikan Anda rasa aman dan kepercayaan penuh.</li>
+                <li><strong>Harga Terjangkau</strong>: Kami memberikan layanan terbaik dengan harga yang kompetitif.</li>
+            </ul>
+            <p>Percayakan kebutuhan konstruksi Anda pada kami dan nikmati layanan profesional yang memuaskan. <strong>Hubungi kami</strong> sekarang untuk konsultasi atau pemesanan layanan las terbaik!</p>
+
+            <hr> <!-- Garis horizontal di atas Layanan Kami -->
+
+            <!-- Layanan Kami -->
+            <div class="layanan-kami">
+                <h3>Layanan Kami</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jenis Layanan</th>
+                            <th>Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Canopy</td>
+                            <td>Pembuatan dan pemasangan canopy besi untuk perlindungan area luar dengan desain sesuai kebutuhan.</td>
+                        </tr>
+                        <tr>
+                            <td>Balkon</td>
+                            <td>Pembuatan balkon besi yang kuat dan estetik, cocok untuk eksterior bangunan Anda.</td>
+                        </tr>
+                        <tr>
+                            <td>Pagar Pintu</td>
+                            <td>Desain pagar dan pintu besi yang kokoh dan elegan sesuai gaya arsitektur.</td>
+                        </tr>
+                        <tr>
+                            <td>Teralis</td>
+                            <td>Teralis besi untuk keamanan jendela dan pintu dengan desain menarik.</td>
+                        </tr>
+                        <tr>
+                            <td>Reling Tangga</td>
+                            <td>Reling tangga besi untuk keamanan dan estetika rumah atau bangunan Anda.</td>
+                        </tr>
+                        <tr>
+                            <td>Kisi-Kisi Besi</td>
+                            <td>Kisi-kisi besi dekoratif dan fungsional untuk ventilasi atau pembatas ruangan.</td>
+                        </tr>
+                        <tr>
+                            <td>Furnitur</td>
+                            <td>Pembuatan furnitur besi seperti meja, kursi, dan lainnya dengan desain unik dan tahan lama.</td>
+                        </tr>
+                        <tr>
+                            <td>Rak</td>
+                            <td>Rak besi berkualitas tinggi untuk keperluan penyimpanan rumah, toko, atau gudang.</td>
+                        </tr>
+                        <tr>
+                            <td>Custom</td>
+                            <td>Pembuatan produk besi sesuai desain dan kebutuhan pelanggan.</td>
+                        </tr>
+                        <tr>
+                            <td>Lain-Lain</td>
+                            <td>Jasa pembuatan berbagai produk berbahan besi lainnya sesuai permintaan.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr> <!-- Garis horizontal di atas Sejarah Bengkel -->
+
+            <h3>Sejarah Bengkel</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Bengkel Las Sinar Abadi Jaya</strong> didirikan pada <strong>tahun 2011</strong> dengan tujuan menyediakan layanan fabrikasi besi berkualitas tinggi. Bermula dari usaha kecil, kami melayani berbagai pembuatan produk besi seperti <strong>pagar, teralis, canopy, balkon, dan produk custom lainnya</strong>. Seiring waktu, kami berkembang dan terus berinovasi dengan menambah layanan konsultasi desain serta menggunakan teknologi modern untuk meningkatkan kualitas dan efisiensi produksi.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Dengan lebih dari 13 tahun pengalaman, kami tetap berkomitmen untuk memberikan hasil terbaik bagi pelanggan, selalu menjaga kualitas dalam setiap pekerjaan yang kami lakukan.</p>
+
+            <hr> <!-- Garis horizontal di atas Hubungi Kami via WhatsApp -->
+
+            <!-- Konten Hubungi Kami -->
+            <div class="hubungi-kami">
+                <h3>Hubungi Kami via WhatsApp</h3>
+                <a href="https://wa.me/6285854998225" target="_blank">
+                    <img src="images/logowa.png" alt="Chat with us on WhatsApp" class="whatsapp-icon">
+                </a>
+                <p>Klik ikon WhatsApp di atas untuk menghubungi kami langsung!</p>
+            </div>
+
+            <hr> <!-- Garis horizontal di atas Informasi Kontak -->
+
+            <!-- Informasi Kontak -->
+            <div class="informasi-kontak">
+                <h3>Informasi Kontak</h3>
+                <table>
+                    <tr>
+                        <th>Alamat</th>
+                        <td class="alamat">Jl. Damai, Wonorejo, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581</td>
+                    </tr>
+                    <tr>
+                        <th>Telepon</th>
+                        <td class="telepon">085 854 998 225 (Pak Taufiq)</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td class="email"> soon </td>
+                    </tr>
+                </table>
+
+                <!-- Jam Operasional -->
+                <h4>Senin – Sabtu: 08.00 AM – 16.00 PM</h4>
+            </div>
+
+        </div>
+
+        <!-- Konten Jasa -->
+        <div id="jasa" class="content-section" style="display: none;">
+            <h2 class="judul-jasa">
+                Pengerjaan Kami
+                <a href="https://wa.me/6285854998225" target="_blank">
+                    <img src="images/logowa.png" alt="Chat with us on WhatsApp" class="whatsapp-icon-jasa">
+                </a>
+            </h2>
+
+            <!-- Deskripsi tambahan -->
+            <p>Silakan pilih katalog untuk melihat contoh pengerjaan kami || <strong>Lebih lengkapnya lagi silahkan WhatsApp Kami</strong></p>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Pilih Kategori Pengerjaan</button>
+                <div class="dropdown-content">
+                    <a href="javascript:void(0)" onclick="showImages('kanopi')">Canopy</a>
+                    <a href="javascript:void(0)" onclick="showImages('balkon')">Balkon</a>
+                    <a href="javascript:void(0)" onclick="showImages('pagarpintu')">Pagar Pintu</a>
+                    <a href="javascript:void(0)" onclick="showImages('teralis')">Teralis</a>
+                    <a href="javascript:void(0)" onclick="showImages('relingtangga')">Reling Tangga</a>
+                    <a href="javascript:void(0)" onclick="showImages('kisikisibesi')">Kisi-Kisi Besi</a>
+                    <a href="javascript:void(0)" onclick="showImages('furnitur')">Furnitur</a>
+                    <a href="javascript:void(0)" onclick="showImages('rak')">Rak</a>
+                    <a href="javascript:void(0)" onclick="showImages('costum')">Custom</a>
+                    <a href="javascript:void(0)" onclick="showImages('lainlain')">Lain-Lain</a>
+                </div>
+            </div>
+
+        <!-- Tempat untuk menampilkan gambar -->
+        <div id="image-container">
+        </div>
+
+        <!-- Modal untuk gambar besar -->
+        <div id="modal" class="modal" onclick="hideModal()">
+            <span id="close-btn" class="close-btn" onclick="hideModal()">&times;</span>
+            <img id="modal-img" class="modal-content" src="" alt="Logo Bengkel Las SAJ">
+        </div>
+        </div>
+
+        <!-- Konten Cara Pesan -->
+        <div id="cara-pesan" class="content-section" style="display: none;">
+            <h2>Cara Pemesanan Jasa Kami</h2>
+            <p>Kami ingin memberikan kemudahan bagi Anda dalam memesan jasa kami. Pilih cara yang paling sesuai dan nyaman, dan kami akan memastikan setiap langkah berjalan lancar. Berikut adalah panduan cara pemesanan jasa kami:</p>
+            
+            <ol>
+                <li>
+                    <strong>Hubungi Kami</strong>
+                    <p>Anda dapat menghubungi kami dengan berbagai cara: melalui telepon, SMS, atau chatting, atau bahkan datang langsung ke workshop kami di alamat yang tertera di website ini.</p>
+                </li>
+                
+                <li>
+                    <strong>Survey Lokasi</strong>
+                    <p>Setelah melakukan pemesanan, kami akan melakukan survey di lokasi sesuai dengan kebutuhan Anda untuk pengukuran dan memastikan semuanya sesuai dengan permintaan.</p>
+                </li>
+                
+                <li>
+                    <strong>Penawaran Harga</strong>
+                    <p>Berdasarkan hasil pengukuran, kami akan memberikan penawaran harga yang transparan dan sesuai dengan pekerjaan yang akan dilakukan.</p>
+                </li>
+                
+                <li>
+                    <strong>Persetujuan dan Pengerjaan</strong>
+                    <p>Setelah penawaran harga disepakati, kami akan segera memulai proses pembuatan sesuai dengan pesanan Anda.</p>
+                </li>
+                
+                <li>
+                    <strong>Estimasi Waktu Pengerjaan</strong>
+                    <p>Lama pengerjaan bervariasi antara 7 hingga 14 hari, tergantung pada volume pekerjaan dan tingkat kesulitannya.</p>
+                </li>
+                
+                <li>
+                    <strong>Pengiriman dan Pemasangan</strong>
+                    <p>Setelah barang selesai dibuat, kami akan mengirimkannya dan mulai melakukan pemasangan di lokasi yang telah disepakati.</p>
+                </li>
+                
+                <li>
+                    <strong>Pembayaran</strong>
+                    <p>Setelah pekerjaan selesai, pemesan diwajibkan untuk melunasi pembayaran sesuai dengan kesepakatan yang telah dibuat sebelumnya.</p>
+                </li>
+            </ol>
+            
+            <p>Terima kasih telah memilih layanan kami! Kami akan selalu berusaha memberikan yang terbaik untuk Anda.</p>
+            <p>Salam,<br><strong>Bengkel Las Sinar Abadi Jaya</strong></p>
+        </div>
+
+        <!-- Konten Lokasi -->
+        <div id="lokasi" class="content-section" style="display: none;">
+            <h2>Patokan Lokasi Bengkel</h2>
+            <p><strong>Lokasi bengkel berada di dalam gang, tepat di utara Resto Seafood yang memiliki ikon pesawat. Silakan masuk ke gang tersebut, dan bengkel kami terletak di bagian belakang</strong>.</p>
+
+            <!-- Menggunakan Flexbox untuk gambar -->
+            <div class="image-container">
+                <img src="images/patokan1.jpg" alt="Patokan 1" class="lokasi-img">
+                <img src="images/patokan2.jpg" alt="Patokan 2" class="lokasi-img">
+                <img src="images/patokan3.jpg" alt="Patokan 3" class="lokasi-img">
+
+            </div>
+
+                <!-- Link ke Website -->
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <!-- Gambar Logo -->
+                <img src="images/map.png" alt="Google Map" style="width: 50px; height: 50px; margin-right: 10px;">
+                <!-- Teks Link -->
+                <p style="margin: 0;">
+                    <a href="https://www.google.com/search?client=ms-android-transsion&sca_esv=1e62c093203b67d6&cs=1&output=search&kgmid=/g/11wwhrhwdd&q=Bengkel+Las+Sinar+Abadi+Jaya+Jl.+Damai&shndl=30&source=sh/x/loc/act/m1/2&kgs=d8f7bb6ff2d221c5" target="_blank" style="color: blue; text-decoration: underline;">
+                        Klik di sini untuk Melihat Google Map Bengkel Las SAJ
+                    </a>
+                </p>
+            </div>
+
+            <!-- Link ke Ulasan -->
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <!-- Gambar Logo -->
+                <img src="images/ulasan.png" alt="Ulasan" style="width: 50px; height: 50px; margin-right: 10px;">
+                <!-- Teks Link -->
+                <p style="margin: 0;">
+                    <a href="https://g.page/r/CQpBeeXMmsaREBI/review" target="_blank" style="color: blue; text-decoration: underline;">
+                        Klik di sini untuk memberi ulasan tentang Bengkel Las SAJ
+                    </a>
+                </p>
+            </div>
+
+            <!-- Gambar Patokan Lokasi -->
+            <div>
+                <h3>Map Kami</h3>
+                
+                <!-- Embed Google Map -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.409320486349!2d110.42697391466582!3d-7.7268230946096935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8b7243b77777%3A0x6b3d5f364cc6e26b!2sBengkel%20Las%20Sinar%20Abadi%20Jaya!5e0!3m2!1sen!2sid!4v1602519482764!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+        <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bengkel Las SAJ - All rights reserved</p>
+    </footer
+</body>
+</html>

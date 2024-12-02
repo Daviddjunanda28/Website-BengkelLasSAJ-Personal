@@ -1,0 +1,622 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atur lebar elemen agar tidak melebar lebih dari ukuran viewport */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+    background-color: #e5e5e5; /* Latar belakang lebih terang dan segar */
+}
+
+/* Konten utama */
+main {
+    flex: 1;
+}
+
+/* Styling untuk header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1b2a41; /* Warna biru tua yang elegan */
+    color: #f9f9f9; /* Putih terang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow lebih halus */
+    transition: background-color 0.3s ease;
+    margin-bottom: 0;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center; /* Menyelaraskan logo dan teks */
+    justify-content: center; /* Memusatkan konten di header */
+    padding: 10px;
+}
+
+header:hover {
+    background-color: #162338; /* Biru lebih gelap saat dihover */
+}
+
+header .logo {
+    width: 50px; /* Atur lebar logo sesuai keinginan */
+    margin-right: 15px; /* Jarak antara logo dan judul */
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+header .title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1b2a41;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Warna merah muda cerah untuk hover */
+    text-decoration: underline;
+}
+
+/* WhatsApp icon styling */
+.whatsapp-icon {
+    width: 250px;
+    height: auto;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.judul-jasa {
+    display: flex;
+    justify-content: space-between; /* Memisahkan judul dan ikon */
+    align-items: center; /* Menjaga agar ikon sejajar dengan teks */
+}
+
+/* Menambahkan jarak pada deskripsi */
+#jasa p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.whatsapp-icon-jasa {
+    width: 200px; /* Ukuran ikon lebih kecil */
+    height: 150px;
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.whatsapp-icon-jasa:hover {
+    transform: scale(1.2); /* Zoom in saat di hover */
+}
+
+/* Styling untuk konten */
+.content-section {
+    padding: 40px 50px;
+    display: block;
+    text-align: justify;
+    background-color: #ffffff; /* Warna putih untuk konten */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Sudut lebih bulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-section#beranda {
+    display: block;
+}
+
+h2, h3 {
+    color: #2f2f2f; /* Warna abu-abu gelap untuk teks */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+/* Styling untuk Hubungi Kami */
+.hubungi-kami {
+    text-align: center; /* Memusatkan teks */
+    padding: 20px; /* Memberikan sedikit jarak pada elemen */
+}
+
+.hubungi-kami h3 {
+    font-size: 24px;
+    color: #2f2f2f; /* Warna teks */
+    margin-bottom: 20px;
+}
+
+.whatsapp-icon {
+    width: 300px; /* Menentukan ukuran ikon */
+    height: auto;
+    margin-bottom: 10px; /* Memberikan jarak bawah pada gambar */
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Efek zoom ketika hover */
+}
+
+.hubungi-kami p {
+    font-size: 16px;
+    color: #2f2f2f; /* Warna teks */
+}
+
+/* Styling untuk banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+    border-radius: 12px; /* Border lebih halus */
+}
+
+.banner-image:hover {
+    transform: scale(1.05);
+}
+
+/* Styling untuk Cara Pemesanan */
+.content-section#cara-pesan {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Styling untuk Tabel */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #1b2a41;
+    color: #fff;
+}
+
+table td {
+    background-color: #f4f4f9; /* Warna latar belakang lebih terang */
+}
+
+/* Styling untuk peta (Google Map) */
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+/* Styling untuk Informasi Kontak */
+.informasi-kontak {
+    text-align: center; /* Memusatkan teks */
+    padding: 20px; /* Memberikan sedikit jarak pada elemen */
+}
+
+/* Styling untuk Tabel Informasi Kontak */
+.informasi-kontak table {
+    width: 80%; /* Mengatur lebar tabel */
+    margin: 20px auto; /* Memusatkan tabel di tengah halaman */
+    border-collapse: collapse; /* Menghilangkan jarak antara sel tabel */
+}
+
+.informasi-kontak th, .informasi-kontak td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.informasi-kontak th {
+    background-color: #1b2a41;
+    color: white;
+}
+
+.informasi-kontak td {
+    background-color: #f4f4f9;
+}
+
+/* Styling untuk Jam Operasional */
+.informasi-kontak h4 {
+    font-size: 18px;
+    color: #2f2f2f; /* Warna teks */
+    margin-top: 20px;
+}
+
+/* Styling untuk Layanan Kami */
+.layanan-kami {
+    text-align: center; /* Memusatkan teks */
+    padding: 20px; /* Memberikan sedikit jarak pada elemen */
+}
+
+/* Styling untuk Tabel Layanan Kami */
+.layanan-kami table {
+    width: 80%; /* Mengatur lebar tabel */
+    margin: 20px auto; /* Memusatkan tabel di tengah halaman */
+    border-collapse: collapse; /* Menghilangkan jarak antara sel tabel */
+}
+
+.layanan-kami th, .layanan-kami td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.layanan-kami th {
+    background-color: #1b2a41;
+    color: white;
+}
+
+.layanan-kami td {
+    background-color: #f4f4f9;
+}
+
+/* CSS untuk responsivitas peta */
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Menjaga rasio 16:9 untuk peta */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1b2a41;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsif untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header .logo img {
+        max-width: 80px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        padding: 12px;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.dropbtn {
+    background-color: #1b2a41;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropbtn:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3f3f8;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #1b2a41;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+/* Styling for active links in navbar */
+nav ul li a.active {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Responsif untuk footer pada perangkat kecil */
+@media (max-width: 480px) {
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Gambar dalam lokasi */
+.lokasi-img {
+    width: 100%;
+    max-width: 500px; /* Maksimum lebar gambar */
+    height: auto; /* Menjaga aspek rasio gambar */
+}
+
+/* Gambar dalam katalog */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsif untuk gambar di perangkat kecil */
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
+
+
+#cara-pesan {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cara-pesan h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cara-pesan ol {
+    margin-left: 20px;
+}
+
+#cara-pesan li {
+    margin-bottom: 20px;
+}
+
+#cara-pesan li strong {
+    font-size: 18px;
+    color: #1b2a41;
+}
+
+#cara-pesan p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+#cara-pesan p:last-child {
+    margin-top: 20px;
+    font-style: italic;
+    color: #333;
+}
+
+/* Gaya untuk modal */
+.modal {
+    display: none; /* Sembunyikan modal secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+}
+
+/* Gaya untuk gambar besar dalam modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Gaya untuk tombol close */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animasi zoom */
+@keyframes zoom-in {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Tombol close */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #ff0000;
+}
+
+/* Gaya untuk gambar kecil */
+.image-item {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  display: inline-block;
+  object-fit: cover;
+  cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+/* Gaya modal */
+.modal {
+  display: none; /* Modal tidak terlihat secara default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Gaya untuk gambar modal */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  border: 2px solid white;
+}
+
+/* Gaya untuk tombol tutup (×) */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001; /* Pastikan tombol berada di atas gambar */
+}
+
+.close-btn:hover {
+  color: red;
+}
